@@ -1,3 +1,5 @@
+# inspired by https://github.com/linhmtran168/mac_dotfiles
+
 # install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -18,12 +20,12 @@ chsh -s /bin/zsh
 
 
 # install importnt gui apps
-brew cask install google-chrome iterm2 vlc google-drive
+brew cask install google-chrome iterm2 vlc google-drive alfred flux atom
 
 
 # iterm solarized dark
 wget https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors
 
 
-# install fonts 
+# install fonts
 git clone https://github.com/powerline/fonts && ./fonts/install.sh && rm -rf fonts
