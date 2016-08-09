@@ -45,6 +45,7 @@ typeset -gU cdpath fpath mailpath path
 path=(
   /usr/local/{bin,sbin}
   $path
+  ~/g_drive/comp_work/scripts/
 )
 
 #

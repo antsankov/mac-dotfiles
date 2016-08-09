@@ -20,7 +20,7 @@ chsh -s /bin/zsh
 
 
 # install importnt gui apps
-brew cask install google-chrome iterm2 vlc google-drive alfred flux atom
+brew cask install google-chrome iterm2 vlc google-drive alfred flux atom bettertouchtool
 
 
 # iterm solarized dark
