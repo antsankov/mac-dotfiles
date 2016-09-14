@@ -5,8 +5,8 @@
 
 
 # install packages
-brew install zsh python python3 tmux wget brew-cask
-
+brew install zsh python python3 tmux wget brew-cask wget
+brew link wget
 
 # install prezto
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
@@ -17,7 +17,7 @@ done
 chsh -s /bin/zsh
 
 # Symlink all dotfiles to home directories
-
+ln config/.* ~
 
 # install importnt gui apps
 brew cask install google-chrome iterm2 vlc google-drive alfred flux atom bettertouchtool
