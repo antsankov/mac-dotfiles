@@ -1,4 +1,7 @@
 # inspired by https://github.com/linhmtran168/mac_dotfiles
+# Important Links:
+# http://www.catonmat.net/blog/bash-vi-editing-mode-cheat-sheet/ 
+
 
 # install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
