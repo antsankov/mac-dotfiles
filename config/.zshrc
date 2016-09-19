@@ -12,3 +12,4 @@ fi
 
 # Customize to your needs...
 set -o vi
+source bin/aws_zsh_completer.sh
