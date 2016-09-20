@@ -15,7 +15,13 @@ if [[ $USER = "alextsankov" ]]; then
     source ~/.workivarc
 fi
 
-# Customize to your needs...
+# History (http://superuser.com/questions/410965/command-history-in-zsh)
+# append to the history file only after close.
+setopt APPEND_HISTORY 
+# share command history data
+setopt share_history 
+
+# vi keybindings
 set -o vi
 
 # Gostuff
@@ -23,3 +29,6 @@ export GOPATH=$HOME/golang
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
+
+# Aliases
+alias histgrep='history | grep'
