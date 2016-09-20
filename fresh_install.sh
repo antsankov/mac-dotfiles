@@ -7,7 +7,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install packages
-brew install zsh python python3 tmux wget brew-cask wget vim
+brew install zsh python python3 tmux wget brew-cask wget vim go
 brew link wget
 
 # install prezto

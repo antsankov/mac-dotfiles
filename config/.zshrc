@@ -10,6 +10,16 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Workiva
+if [[ $USER = "alextsankov" ]]; then
+    source ~/.workivarc
+fi
+
 # Customize to your needs...
 set -o vi
-source bin/aws_zsh_completer.sh
+
+# Gostuff
+export GOPATH=$HOME/golang
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
