@@ -28,8 +28,9 @@ wget https://raw.githubusercontent.com/altercation/solarized/master/iterm2-color
 # install fonts
 git clone https://github.com/powerline/fonts && ./fonts/install.sh && rm -rf fonts
 
-# install vim
-git clone https://github.com/ddellaquila/dd-vim.giti && cd dd-vim && ./install.sh
+# install vim, remember to run :PlugInstall
+
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Symlink all dotfiles to home directories
 ln config/.* ~
