@@ -25,10 +25,10 @@ setopt share_history
 set -o vi
 
 # Gostuff
-export GOPATH=$HOME/golang
-export GOROOT=/usr/local/opt/go/libexec
+# export GOPATH=$HOME/golang
+export GOPATH=/usr/local/opt/go/libexec
+# export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
 
 # Aliases
 alias histgrep='history | grep'

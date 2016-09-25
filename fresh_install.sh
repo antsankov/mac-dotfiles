@@ -34,3 +34,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 
 # Symlink all dotfiles to home directories
 ln config/.* ~
+
+# vim setup
+vim +PlugInstall +qall
+vim +GoInstallBinaries +qall
+
