@@ -10,10 +10,15 @@ set autoindent
 set smartindent
 set nowrap
 
+
+autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 expandtab
+
 autocmd! GUIEnter * set vb t_vb=
 
 " vim-plug
 call plug#begin('~/.vim/plugged')
+Plug 'Chiel92/vim-autoformat'
 Plug 'jiangmiao/auto-pairs'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ElmCast/elm-vim', { 'for': 'elm' }

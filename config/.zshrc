@@ -22,7 +22,7 @@ setopt APPEND_HISTORY
 setopt share_history 
 
 # vi keybindings
-set -o vi
+# set -o vi
 
 # Gostuff
 export GOPATH=$HOME/golang
