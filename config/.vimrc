@@ -23,7 +23,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ElmCast/elm-vim', { 'for': 'elm' }
 Plug 'altercation/vim-colors-solarized'
-
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-go', { 'for': 'go' }
@@ -46,6 +45,10 @@ let g:elm_format_autosave = 1
 
 " ctrlp
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+"http://vim.wikia.com/wiki/Backspace_and_delete_problems
+set backspace=indent,eol,start
+
 
 " Color
 set background=dark
