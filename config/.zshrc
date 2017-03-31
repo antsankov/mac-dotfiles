@@ -32,3 +32,11 @@ export PATH=$PATH:$GOPATH/bin
 
 # Aliases
 alias histgrep='history | grep'
+
+copy (){
+    cat $1 | pbcopy
+}
+
+paste (){
+    pbpaste > $1
+}

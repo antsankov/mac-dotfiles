@@ -35,8 +35,8 @@ zstyle ':prezto:load' pmodule \
   'prompt' \
   'osx' \
   'git' \
-  'python' \
-  'tmux'
+#  'python' \
+#  'tmux'
 #
 # Autosuggestions
 #

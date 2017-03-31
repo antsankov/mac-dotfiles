@@ -7,7 +7,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install packages
-brew install zsh python python3 tmux wget brew-cask wget vim go
+brew install zsh python python3 tmux wget brew-cask wget go neovim/neovim/neovim
 brew link wget
 
 # install prezto
@@ -18,9 +18,11 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
 done
 chsh -s /bin/zsh
 
+# global gitignore
+git config --global core.excludesfile ~/.gitignore_global
 
 # install importnt gui apps
-brew cask install google-chrome iterm2 vlc google-drive alfred flux atom bettertouchtool
+brew cask install google-chrome iterm2 vlc google-drive alfred flux atom 
 
 # iterm solarized dark
 wget https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors
