@@ -29,6 +29,7 @@ export GOPATH=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 
 # Aliases
+alias vim='nvim'
 alias histgrep='history 0 | grep'
 
 copy (){
