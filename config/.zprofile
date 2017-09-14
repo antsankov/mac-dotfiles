@@ -48,6 +48,9 @@ path=(
   ~/g_drive/comp_work/scripts/
 )
 
+export GOPATH=/Users/$USERNAME/go
+export PATH=$GOPATH/bin:$PATH
+
 #
 # Less
 #

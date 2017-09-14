@@ -9,6 +9,16 @@ set smartindent
 set nowrap
 set mouse=a
 
+" flake8 on py save
+autocmd BufWritePost *.py call Flake8()
+
+" remove extra whitespace on python
+autocmd BufWritePre *.py %s/\s\+$//e
+
+" run gofmt on save
+au BufWritePost *.go !gofmt -w %
+
+
 " vim-plug
 call plug#begin('~/.config/nvim/plugins')
 Plug 'jiangmiao/auto-pairs'
@@ -23,6 +33,8 @@ Plug 'neovimhaskell/haskell-vim', { 'for': 'hs' }
 " Plug 'https://github.com/joshdick/onedark.vim.git'
 Plug 'https://github.com/altercation/vim-colors-solarized.git'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+Plug 'https://github.com/nvie/vim-flake8.git'
+Plug 'https://github.com/ConradIrwin/vim-bracketed-paste'
 call plug#end()
 
 " NERDtree
@@ -45,3 +57,8 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 syntax on
 filetype plugin indent on
 " colorscheme solarized
+
+set mouse=
+
+vnoremap <silent> # :s/^/#/<cr>:noh<cr>
+vnoremap <silent> -# :s/^#//<cr>:noh<cr>
